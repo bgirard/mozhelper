@@ -1,3 +1,9 @@
 Just a collection of shell script useful to developping on mozilla-central.
 These scripts are aimed at helping when managing multiple trees with multiple
 mozconfig.
+
+INSTALL
+=======
+
+1) Put the 'path' directory in your path
+

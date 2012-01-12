@@ -1,0 +1,30 @@
+#!/bin/bash
+
+if [ -e $(cat ~/.config/moz_tree)/dist/universal/firefox/NightlyDebug.app/Contents/MacOS/firefox ]
+then
+  echo "Universal Debug"
+  $(cat ~/.config/moz_tree)/dist/universal/firefox/NightlyDebug.app/Contents/MacOS/firefox -P "DevProfile" -no-remote -g -d gdb $@
+  exit
+fi
+
+if [ -e $(cat ~/.config/moz_tree)/dist/universal/firefox/Nightly.app/Contents/MacOS/firefox ]
+then
+  echo "Universal Opt"
+  gdb --args $(cat ~/.config/moz_tree)/dist/universal/firefox/Nightly.app/Contents/MacOS/firefox -P "DevProfile" -no-remote $@
+  exit
+fi
+
+if [ -e $(cat ~/.config/moz_tree)/dist/NightlyDebug.app/Contents/MacOS/firefox ]
+then
+  echo "Debug"
+  gdb --args $(cat ~/.config/moz_tree)/dist/NightlyDebug.app/Contents/MacOS/firefox -P "DevProfile" -no-remote $@
+  exit
+fi
+
+if [ -e $(cat ~/.config/moz_tree)/dist/Nightly.app/Contents/MacOS/firefox ]
+then
+  echo $(cat ~/.config/moz_tree)
+  echo "Opt"
+  gdb --args $(cat ~/.config/moz_tree)/dist/Nightly.app/Contents/MacOS/firefox -P "DevProfile" -no-remote $@
+  exit
+fi
