@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# INSTALL:
+# Add 'q = !qstatus' to .hg/hgrc
+
+echo "-- Queue name: "
+hg qqueue #| grep "(active)"
+echo "-- Series:"
+hg qseries -v
+
