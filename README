@@ -1,0 +1,3 @@
+Just a collection of shell script useful to developping on mozilla-central.
+These scripts are aimed at helping when managing multiple trees with multiple
+mozconfig.
