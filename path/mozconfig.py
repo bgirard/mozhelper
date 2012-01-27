@@ -53,7 +53,7 @@ output("")
 if opt == 2:
     output("# Optimized")
     output("ac_add_options --disable-debug")
-    output("ac_add_options --enable-optimization")
+    output("ac_add_options --enable-optimize")
 elif opt == 1:
     output("# Unoptimized with symbols")
     output("ac_add_options --disable-debug")
@@ -61,7 +61,7 @@ elif opt == 1:
 else:
     output("# Debug build")
     output("ac_add_options --enable-debug")
-    output("ac_add_options --disable-optimization")
+    output("ac_add_options --disable-optimize")
 
 output("")
 output("# Concurrent Jobs")
