@@ -24,7 +24,7 @@ git pull || {
 }
 
 # Source mozhelper
-grep "source ~/mozhelper/bash_source.sh" ~/.bash_profile || {
+grep "source ~/mozhelper/bash_source.sh" ~/.bash_profile >/dev/null 2>&1 || {
   cat >> ~/.bash_profile <<EOF
 
 # Source mozhelper utilies to your path
