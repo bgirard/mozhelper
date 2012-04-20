@@ -9,6 +9,15 @@ type git >/dev/null 2>&1 || {
   error "Git is not installed"
 }
 
+[ -d ~/mozhelper ] >/dev/null 2>&1 && {
+  read -p "mozhelper is already installed, would you like to clobber your installation and reinstall a fresh copy? [y/n] " yn
+  [ "$yn" != "n" ] && {
+    files=$(find ~/mozhelper | wc -l)
+    rm -rf ~/mozhelper
+    echo "Deleted $files files"
+  }
+}
+
 # Clone mozhelper
 [ ! -d ~/mozhelper ] >/dev/null 2>&1 && { 
   git clone https://github.com/bgirard/mozhelper ~/mozhelper || {
