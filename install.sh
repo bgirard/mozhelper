@@ -1,6 +1,7 @@
 #!/bin/bash
 function error {
     echo "Error:" $1
+    exit
 }
 
 # Check git
