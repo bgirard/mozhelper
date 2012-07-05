@@ -5,5 +5,5 @@ mozconfig.
 INSTALL
 =======
 
-1) Put the 'path' directory in your path
+1) Type 'curl https://raw.github.com/bgirard/mozhelper/master/install.sh > /tmp/install.sh && chmod +x /tmp/install.sh && /tmp/install.sh'
 
