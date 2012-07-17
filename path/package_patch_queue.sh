@@ -1,3 +1,3 @@
-CURR_DUR$PWD
-echo .hg/patches-$(hg qqueue --active)
-tar -C .hg/patches-$(hg qqueue --active) -zxvf patches-$(hg qqueue --active).tar . 
+tar -C .hg/patches-$(hg qqueue --active) -zcvf patches-$(hg qqueue --active).tar . && {
+  echo "Created: " patches-$(hg qqueue --active).tar
+}
