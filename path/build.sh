@@ -4,4 +4,4 @@ cd $(dirname ${MOZCONFIG})
 echo $MOZCONFIG
 echo $PWD
 cat $MOZCONFIG
-time make -f client.mk
+time ./mach build
