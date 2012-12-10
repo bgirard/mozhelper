@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.7
 
 # This script is intended to provide a very fast way to get what amounts to a
 # 'make -w -j1' Mozilla build log containing the commands that are invoked to

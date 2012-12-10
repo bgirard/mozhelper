@@ -1,8 +1,7 @@
 #!/bin/bash
 
 set -e
-cd $(cat ~/.config/moz_tree)
-#make -C $(cat ~/.config/moz_tree) package
+cd $(cat .config/moz_tree)
 
 cd dist
 echo -n "Install: "
