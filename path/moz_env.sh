@@ -1,0 +1,1 @@
+export XPCOM_MEM_LEAK_LOG=1
