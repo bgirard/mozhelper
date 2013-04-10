@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 export MOZCONFIG=$(cat .config/moz_config)
 cd $(dirname ${MOZCONFIG})
 echo $MOZCONFIG
