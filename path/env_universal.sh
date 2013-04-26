@@ -4,8 +4,8 @@ MOZ_CONFIG=.mozconfiguniversalopt
 MOZ_OBJDIR=obj-ff-universalopt
 
 cat << EOF > $MOZ_CONFIG
-. $topsrcdir/browser/config/mozconfig
-. $topsrcdir/build/macosx/universal/mozconfig
+. \$topsrcdir/browser/config/mozconfig
+. \$topsrcdir/build/macosx/universal/mozconfig
 
 CC=clang
 CXX=clang++

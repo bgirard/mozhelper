@@ -4,7 +4,7 @@ MOZ_CONFIG=.mozconfig32gdb
 MOZ_OBJDIR=obj-ff-32gdb
 
 cat << EOF > $MOZ_CONFIG
-. $topsrcdir/browser/config/mozconfig
+. \$topsrcdir/browser/config/mozconfig
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/../builds/obj-ff-32gdb
 mk_add_options MOZ_MAKE_FLAGS="-w -s -j4"
 mk_add_options AUTOCONF=autoconf213

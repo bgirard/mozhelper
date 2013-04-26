@@ -4,7 +4,7 @@ MOZ_CONFIG=.mozconfig64gdb
 MOZ_OBJDIR=obj-ff-64gdb
 
 cat << EOF > $MOZ_CONFIG
-. $topsrcdir/browser/config/mozconfig
+. \$topsrcdir/browser/config/mozconfig
 
 CC=clang
 CXX=clang++
