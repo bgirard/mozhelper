@@ -15,7 +15,7 @@ mk_add_options MOZ_MAKE_FLAGS="-w -s -j8"
 mk_add_options AUTOCONF=autoconf213
 ac_add_options --disable-crashreporter
 ac_add_options --enable-tests
-ac_add_options --disable-debug
+ac_add_options --enable-debug
 ac_add_options --enable-debug-symbols
 #Not an optimize build so don't profile
 ac_add_options --enable-profiling
