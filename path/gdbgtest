@@ -1,0 +1,3 @@
+#!/bin/bash
+
+MOZ_RUN_GTEST=true gdbminefield 
